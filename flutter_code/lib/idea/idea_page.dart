@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_code/idea/DataTools.dart';
 import 'package:flutter_code/idea/listview/listview_main_page.dart';
+import 'package:flutter_code/idea/network/network_main_page.dart';
+import 'package:flutter_code/idea/widgets/widget_main_page.dart';
 
 //This class inherits from a class marked as @immutable, and therefore should be immutable (all instance fields must be final).
 class IdeaPage extends StatefulWidget {
@@ -35,15 +37,17 @@ class _IdeaPageState extends State<IdeaPage> {
                 contentPadding:new EdgeInsets.all(5.0),
                 onTap:(){
                   var titleStr=widgetItemList[index].title;
-                  if(titleStr.contains("ListView")){
                     Navigator.of(context).push(new MaterialPageRoute(
                         builder: (context) {
                           if(titleStr.contains("ListView")){
                             return new ListViewMainPage();
+                          }else if(titleStr.contains("NetWork")){
+                            return new NetWorkPage();
+                          }else if(titleStr.contains("Widget")){
+                            return new WidgetMainPage();
                           }
                         }
                     ));
-                  }
                   }
               );
             },
