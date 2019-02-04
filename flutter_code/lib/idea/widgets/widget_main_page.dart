@@ -2,8 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_code/common/BasePage.dart';
 import 'package:flutter_code/idea/widgets/Align.dart';
 import 'package:flutter_code/idea/widgets/AspectRatio.dart';
+import 'package:flutter_code/idea/widgets/Baseline.dart';
+import 'package:flutter_code/idea/widgets/Center.dart';
+import 'package:flutter_code/idea/widgets/Column.dart';
 import 'package:flutter_code/idea/widgets/ConstrainedBox.dart';
+import 'package:flutter_code/idea/widgets/Container.dart';
 import 'package:flutter_code/idea/widgets/FittedBox.dart';
+import 'package:flutter_code/idea/widgets/ListBody.dart';
+import 'package:flutter_code/idea/widgets/ListView.dart';
+import 'package:flutter_code/idea/widgets/Padding.dart';
 import 'package:flutter_code/idea/widgets/UnconstrainedBox.dart';
 
 const List<String> singleLayoutWidgets = [
@@ -41,9 +48,8 @@ const List<String> multiLayoutWidgets = [
   "ListView",
   "CustomMultiChildLayout",
 ];
+
 class WidgetMainPage extends BasePage {
-
-
   @override
   Widget getHomeWidget(BuildContext context) {
     List<String> layoutWidgets = [];
@@ -87,15 +93,15 @@ class WidgetMainPage extends BasePage {
   Map<String, WidgetBuilder> getRoutes() {
     // TODO: implement routes
     return <String, WidgetBuilder>{
-//      '/Container': (_) => new LYContainer(),
-//      '/Padding': (_) => new LYPadding(),
-//      '/Center': (_) => new LYCenter(),
+      '/Container': (_) => new CContainer(),
+      '/Padding': (_) => new CPadding(),
+      '/Center': (_) => new CCenter(),
       '/Align': (_) => new CAlign(),
       '/FittedBox': (_) => new CFittedBox(),
       '/AspectRatio': (_) => new CAspectRatio(),
       '/ConstrainedBox': (_) => new CConstrainedBox(),
       '/UnconstrainedBox': (_) => new CUnconstrainedBox(),
-//      '/Baseline': (_) => new LYBaseline(),
+      '/Baseline': (_) => new CBaseline(),
 //      '/FractionallySizedBox': (_) => new LYFractionallySizedBox(),
 //      '/IntrinsicHeight': (_) => new LYIntrinsicHeight(),
 //      '/IntrinsicWidth': (_) => new LYIntrinsicWidth(),
@@ -108,15 +114,15 @@ class WidgetMainPage extends BasePage {
 //      '/CustomSingleChildLayout': (_) => new LYCustomSingleChildLayout(),
 //
 //      '/Row': (_) => new LYRow(),
-//      '/Column': (_) => new LYColumn(),
+      '/Column': (_) => new CColumn(),
 //      '/Stack': (_) => new LYStack(),
 //      '/IndexedStack': (_) => new LYIndexedStack(),
 //      '/GridView': (_) => new LYGridView(),
 //      '/Flow': (_) => new LYFlow(),
 //      '/Table': (_) => new LYTable(),
 //      '/Wrap': (_) => new LYWrap(),
-//      '/ListBody': (_) => new LYListBody(),
-//      '/ListView': (_) => new LYListView(),
+      '/ListBody': (_) => new CListBody(),
+      '/ListView': (_) => new CListView(),
 //      '/CustomMultiChildLayout': (_) => new LYCustomMultiChildLayout(),
     };
   }
