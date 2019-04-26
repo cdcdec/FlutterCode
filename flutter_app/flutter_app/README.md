@@ -1,16 +1,11 @@
 # flutter_app
 
-A new Flutter application.
+Flutter Widgets: Text
 
-## Getting Started
+https://juejin.im/entry/5b06aea8f265da0dce48fb56
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+https://flutter.dev/docs
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
+https://github.com/nisrulz/flutter-examples
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.

@@ -69,12 +69,13 @@ android {
         }
     }
 
-    android.applicationVariants.all { variant ->
-        variant.outputs.all {
-            variant.getPackageApplication().outputDirectory = new File("E:\\Android\\workplace\\FlutterCode\\apks")
-            outputFileName = "${defaultConfig.applicationId}_${flutterVersionName}_${apkTime}_${flutterVersionCode}.apk"
-        }
-    }
+//    android.applicationVariants.all { variant ->
+//        variant.outputs.all {
+//            variant.getPackageApplication().outputDirectory = new File("E:\\Android\\workplace\\FlutterCode\\apks")
+//            outputFileName = "${defaultConfig.applicationId}_${flutterVersionName}_${apkTime}_${flutterVersionCode}.apk"
+//
+//        }
+//    }
 
    /* buildTypes {
         release {
