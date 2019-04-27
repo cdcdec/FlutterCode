@@ -1,9 +1,13 @@
 # FlutterCode
 
-[Flutter Android打包](https://github.com/cdcdec/FlutterCode/blob/master/notes/Flutter%20Android%E6%89%93%E5%8C%85.md)
+[Flutter Android打包](notes/Flutter Android打包.md)
 
-[Dart函数](https://github.com/cdcdec/FlutterCode/blob/master/notes/Dart%E5%87%BD%E6%95%B0.md)
+[Dart函数](notes/Dart函数.md)
 
-[Dart函数21](/notes/Dart函数.md)
-[Dart函数22](../notes/Dart函数.md)
-[Dart函数23](notes/Dart函数.md)
+```
+markdown相对路径:此README.md文件与文件夹notes是同一级目录
+[Dart函数](/notes/Dart函数.md)
+[Dart函数](notes/Dart函数.md)
+以上两种方法都可以
+
+```
