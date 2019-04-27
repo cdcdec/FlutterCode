@@ -1,12 +1,12 @@
-// This sample shows adding an action to an [AppBar] that opens a shopping cart.
-
 import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_app/d/stateless.dart';
-import 'package:flutter_app/d/stepper.dart';
-import 'package:flutter_app/d/tab/TabMain.dart';
+import 'package:flutter_app/examples/custom_fonts/customFontsMain.dart';
+import 'package:flutter_app/examples/gradient_backgroundcolor/main.dart';
+import 'package:flutter_app/examples/listviews/listViewMain.dart';
+import 'package:flutter_app/examples/navigation_drawer/NavigationDrawerMain.dart';
+import 'package:flutter_app/examples/stateless.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -14,13 +14,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (Platform.isAndroid) {
-      print("=====isAndroid");
       SystemUiOverlayStyle systemUiOverlayStyle =
       SystemUiOverlayStyle(statusBarColor: Colors.transparent);
       SystemChrome.setSystemUIOverlayStyle(systemUiOverlayStyle);
     }
     return MaterialApp(
-      home: TabMain(),
+      home: ListViewMain(),
 
       theme: new ThemeData(primarySwatch: Colors.green),
     );

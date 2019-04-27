@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/d/tab/FirstTab.dart';
-import 'package:flutter_app/d/tab/SecondTab.dart';
-import 'package:flutter_app/d/tab/ThirdTab.dart';
+import 'package:flutter_app/examples/top_nav_bar/SecondTab.dart';
+import 'package:flutter_app/examples/top_nav_bar/ThirdTab.dart';
+import 'package:flutter_app/examples/top_nav_bar/FirstTab.dart';
 class TabMain extends StatefulWidget{
   @override
   State<StatefulWidget> createState() {
