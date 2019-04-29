@@ -1,10 +1,7 @@
 # FlutterCode
 
-[Flutter Android打包](notes/Flutter_Android打包.md)
-
-[Dart函数](notes/Dart函数.md)
-
-
+[flutter语法及用法](notes/README.md)
+[路由框架fluro官网example](flutter_router/README.md)
 
 
 ```

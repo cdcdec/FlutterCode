@@ -8,6 +8,7 @@
  */
 import 'dart:async';
 
+
 import '../../config/application.dart';
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
@@ -31,7 +32,6 @@ class HomeComponentState extends State<HomeComponent> {
     "Saturday",
     "Sunday"
   ];
-
   Widget deepLinkWidget(BuildContext context) {
     return new Stack(
       children: <Widget>[
@@ -159,33 +159,32 @@ class HomeComponentState extends State<HomeComponent> {
         hexCode = "#F76F00";
         message =
             "This screen should have appeared using the default flutter animation for the current OS";
-      } else if (key == "preset-from-left") {
+      } else if (key == "preset-from-left"){
         hexCode = "#5BF700";
         message =
             "This screen should have appeared with a slide in from left transition";
         transitionType = TransitionType.inFromLeft;
-      } else if (key == "preset-fade") {
+      } else if (key == "preset-fade"){
         hexCode = "#F700D2";
         message = "This screen should have appeared with a fade in transition";
         transitionType = TransitionType.fadeIn;
-      } else if (key == "pop-result") {
+      } else if (key == "pop-result"){
         transitionType = TransitionType.native;
         hexCode = "#7d41f4";
         message =
             "When you close this screen you should see the current day of the week";
         result = "Today is ${_daysOfWeek[new DateTime.now().weekday - 1]}!";
       }
-
       String route = "/demo?message=$message&color_hex=$hexCode";
-
-      if (result != null) {
+      if (result != null){
         route = "$route&result=$result";
       }
-
+      //route=/demo?message=This screen should have appeared using the default flutter animation for the current OS&color_hex=#F76F00,result=null
+      print("route=$route,result=$result");
       Application.router
           .navigateTo(context, route, transition: transitionType)
           .then((result) {
-        if (key == "pop-result") {
+        if (key == "pop-result"){
           Application.router.navigateTo(context, "/demo/func?message=$result");
         }
       });
@@ -210,10 +209,10 @@ class HomeComponentState extends State<HomeComponent> {
         transitionBuilder: transition,
         transitionDuration: const Duration(milliseconds: 600),
       );
-    } else if (key == "fixed-trans") {
+    } else if (key == "fixed-trans"){
       Application.router.navigateTo(
           context, "/demo/fixedtrans?message=Hello!&color_hex=#f4424b");
-    } else {
+    } else if(key=="function-call"){
       message = "You tapped the function button!";
       Application.router.navigateTo(context, "/demo/func?message=$message");
     }

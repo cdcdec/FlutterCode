@@ -6,9 +6,9 @@
  * Copyright (c) 2018 Yakka, LLC. All rights reserved.
  * See LICENSE for distribution and usage details.
  */
-import '../../config/application.dart';
 import 'package:flutter/material.dart';
 import 'package:fluro/fluro.dart';
+import 'package:flutter_router/config/application.dart';
 import '../../config/routes.dart';
 
 class AppComponent extends StatefulWidget {
