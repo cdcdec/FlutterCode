@@ -16,7 +16,8 @@ class ListViewMain extends StatelessWidget{
 }
 
 class ContactPage  extends  StatelessWidget{
-  _buildContactList() {
+
+ List<ContactModal> _buildContactList() {
     return <ContactModal>[
       const ContactModal(
           fullName: 'Romain Hoogmoed', email: 'romain.hoogmoed@example.com'),
@@ -36,6 +37,7 @@ class ContactPage  extends  StatelessWidget{
           fullName: 'Emilie Olsen', email: 'emilie.olsen@example.com'),
       const ContactModal(
           fullName: 'Nishant Srivastava', email: 'nishant.srivastava@example.com'),
+      const ContactModal(fullName:'张飞',email: 'zhangfei@qq.com'),
     ];
   }
 
